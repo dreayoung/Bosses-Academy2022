@@ -29,10 +29,11 @@ const About = () => {
           width={300}
           height={300}
           className="rounded-lg opacity-80"
+          alt="wyzae glover"
         />
       </div>
       <div className="absolute lg:right-[12rem] right-10 top-[15rem]">
-        <Image src={zae} width={250} height={250} className="rounded-lg opacity-95" />
+        <Image src={zae} width={250} height={250} className="rounded-lg opacity-95" alt="wyzae g" />
       </div>
       </div>
       <h2 className="text-center register">register below</h2>

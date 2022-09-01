@@ -27,7 +27,7 @@ const brunch = () => {
       <Navbar />
       <div className="text-center p-8">
         {/* <Link href="/brunch"> */}
-          <Image src={signature} width={100} height={50} />
+          <Image src={signature} width={100} height={50} alt="wyzae g signature"/>
         {/* </Link> */}
       </div>
       <About />
@@ -38,6 +38,7 @@ const brunch = () => {
             width={300}
             height={300}
             className="rounded-lg opacity-80"
+            alt="wyzae glover"
           />
         </div>
         <div className="absolute lg:right-[12rem] right-10 top-[13rem]">
@@ -46,6 +47,7 @@ const brunch = () => {
             width={250}
             height={250}
             className="rounded-lg opacity-95"
+            alt="wyzae glover"
           />
         </div>
       </div>

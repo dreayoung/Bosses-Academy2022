@@ -9,7 +9,7 @@ const Footer = () => {
           href="https://flowbite.com/"
           className="flex items-center mb-4 sm:mb-0"
         >
-          <Image src={ba} width={50} height={50} />
+          <Image src={ba} width={50} height={50} alt="ba logo"/>
           <span className="self-center pl-4 text-2xl font-semibold whitespace-nowrap font-beyulian text-pinky">
             Bosses Academy 2022 All Rights Reserved.
           </span>

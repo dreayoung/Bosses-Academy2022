@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import logo from '../public/logo.ico';
 
 const Navbar = () => {
   return (
     <nav className="bg-transparent border-b-semiblack border-b-[1px] px-2 sm:px-4 py-2.5">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="/" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src={logo}
             width={50}
@@ -13,7 +14,7 @@ const Navbar = () => {
             priority
             alt="bosses academy logo"
           />
-        </a>
+        </Link>
         {/* <button
           data-collapse-toggle="navbar-default"
           type="button"
