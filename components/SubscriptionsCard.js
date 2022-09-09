@@ -1,12 +1,12 @@
 import styles from '../styles/Home.module.css';
 
-const subs = ['30.99', '15.99', '20.99'];
+const subs = ['499'];
 
 const SubscriptionsCard = () => {
   return (
-    <section className="pt-40 pb-40">
-      <h3 className="text-center rob font-bold uppercase text-[1.3rem] lg:text-4xl text-goldie pb-6">
-        REGISTER TODAY! <br/> START A SUBSCRIPTION PLAN
+    <section className="pt-20 pb-40">
+      <h3 className="text-center lob font-bold text-4xl text-goldie pb-6">
+        Register Today! <br/> Start a Subscription Plan
       </h3>
       <div className="relative grid grid-cols-1 m-auto space-y-16 lg:space-y-4 lg:grid-cols-3">
         {subs.map((sub, x) => {

@@ -27,29 +27,11 @@ const brunch = () => {
       <Navbar />
       <div className="text-center p-8">
         {/* <Link href="/brunch"> */}
-          <Image src={signature} width={100} height={50} alt="wyzae g signature"/>
+          <Image src={signature} width={150} height={50} alt="wyzae g signature"/>
         {/* </Link> */}
       </div>
       <About />
-      <div className="relative h-80 lg:hidden block">
-        <div className="absolute lg:right-20 left-10 top-10 lg:top-20">
-          <Image
-            src={zaeglover}
-            width={300}
-            height={300}
-            className="rounded-lg opacity-80"
-            alt="wyzae glover"
-          />
-        </div>
-        <div className="absolute lg:right-[12rem] right-10 top-[13rem]">
-          <Image
-            src={zae}
-            width={250}
-            height={250}
-            className="rounded-lg opacity-95"
-            alt="wyzae glover"
-          />
-        </div>
+      <div className="relative lg:hidden block">
       </div>
       <main className={styles.main}>
         <Brunch benefits={benefits} />
