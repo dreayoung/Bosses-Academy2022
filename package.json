@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.10.0",
+    "@stripe/stripe-js": "^1.36.0",
     "flowbite": "^1.5.2",
     "flowbite-react": "^0.1.10",
     "framer-motion": "^7.2.1",
@@ -17,7 +19,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-intersection-observer": "^9.4.0"
+    "react-intersection-observer": "^9.4.0",
+    "stripe": "^10.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

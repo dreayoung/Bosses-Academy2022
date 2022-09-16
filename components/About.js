@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="relative">
       <div className="h-[70vh] lg:h-auto">
-      <div className="absolute hidden lg:block lg:right-20 lg:top-10">
+        <div className="absolute hidden lg:block lg:right-20 lg:top-10">
           <Image
             src={zaeglover}
             width={300}
@@ -15,41 +15,43 @@ const About = () => {
             alt="wyzae glover"
           />
         </div>
-        <div className="absolute block lg:hidden lg:right-20 left-4 lg:top-20">
+        <div className="absolute block lg:hidden lg:right-20 left-8 lg:top-20">
           <Image
             src={zaeglover}
-            width={300}
+            width={250}
             height={300}
             className="rounded-lg opacity-80"
             alt="wyzae glover"
           />
         </div>
-        <div className="absolute lg:right-[12rem] right-4 top-[13rem]">
+        <div className="absolute lg:right-[12rem] right-8 top-[13rem]">
           <Image
             src={zae}
-            width={280}
+            width={250}
             height={280}
             className="rounded-lg opacity-95"
             alt="wyzae g"
           />
         </div>
       </div>
-      <h1 className="font-bold lg:pl-40 text-center lg:text-left mt-8 pt-8 uppercase text-goldie rob text-5xl lg:text-8xl leading-[0.6]">
-        The Boss
+      <h1 className="font-bold lg:pl-40 text-center lg:text-left text-goldie uppercase rob text-6xl lg:text-8xl">
+        <span className="old text-2xl old text-goldie lowercase">meet</span>The
+        Boss
       </h1>
-      <article className="text-md lg:text-xl text-semiblack p-14 lg:pl-32 lg:w-[50rem]">
-        Hey family , welcome to Bosses Academy official website. My name is{' '}
-        <span className="text-goldie">Ms. Wyzae Glover</span> I am the proud
-        CEO of Bosses Academy LLC.<br />
-        <br /> Bosses Academy LLC was founded in your very own NYC (2022) .
+      <article className="old text-2xl lg:text-2xl text-semiblack p-14 lg:pl-32 lg:w-[50rem] brightness-150">
+        Hey family, welcome to Bosses Academy official website. My name is{' '}
+        <span className="brightness-180">Ms. Wyzae Glover</span>. I am the proud
+        CEO of Bosses Academy LLC.
+        <br />
+        <br /> Bosses Academy LLC was founded in your very own NYC in 2022.
         Furthermore, Bosses Academy Focuses on creating Future Bosses of
-        Society! No matter if you’re a beginner or you’ve been in
-        entrepreneurship life for a while, we focus on improving, expanding
-        and educating ourselves! Bosses Academy focus on helping individuals
+        Society! No matter if you&apos;re a beginner or you&apos;ve been in
+        entrepreneurship life for a while, we focus on improving, expanding and
+        educating ourselves! Bosses Academy focus on helping individuals
         structure their business or businesses properly. We help individuals
         clean up their credit. We help individuals gain personal and business
         credit. We educate individuals on multiple streams of income and over
-        all how to be your <span className="text-2xl">OWN BOSS!</span>
+        all how to be your OWN BOSS!
       </article>
       <div className="flex justify-center">
         <iframe

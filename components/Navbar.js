@@ -1,19 +1,27 @@
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../public/logo.ico';
 
 const Navbar = () => {
+  // eslint-disable-next-line react/display-name
+  const ImageNav = React.forwardRef((props, ref) => (
+    <a ref={ref} {...props}>
+      <Image
+        src={logo}
+        width={50}
+        height={50}
+        priority
+        alt="bosses academy logo"
+      />
+    </a>
+  ));
+
   return (
     <nav className="bg-transparent border-b-semiblack border-b-[1px] px-2 sm:px-4 py-2.5">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <Link href="/" className="flex items-center">
-          <Image
-            src={logo}
-            width={50}
-            height={50}
-            priority
-            alt="bosses academy logo"
-          />
+        <Link href="/" passHref={true}>
+          <ImageNav />
         </Link>
         {/* <button
           data-collapse-toggle="navbar-default"
