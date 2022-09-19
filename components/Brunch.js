@@ -8,20 +8,20 @@ const Brunch = ({ benefits }) => {
   return (
     <div className="pt-20 lg:pt-0">
       <div className="w-full max-w-full h-auto">
-        <div className="border-t-[1px] border-t-semiblack w-80 lg:w-1/2 m-auto"/>
-      <div className="lob text-goldie mt-20 text-center text-4xl lg:text-8xl pt-10">
+        <div className="border-t-[1px] border-t-semiblack w-80 lg:w-1/2 m-auto" />
+        <div className="lob text-goldie mt-20 text-center text-4xl lg:text-7xl pt-10">
           Join us for brunch!
         </div>
         <div className="mt-8">
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/ZTe9vHF_aLg"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+          <iframe
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/ZTe9vHF_aLg"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
       <div className="items-center register pt-40">

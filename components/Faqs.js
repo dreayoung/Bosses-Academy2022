@@ -1,4 +1,5 @@
 import { Timeline } from 'flowbite-react';
+import { AiFillQuestionCircle } from 'react-icons/ai';
 
 const Faqs = () => {
   const info = [
@@ -23,16 +24,20 @@ const Faqs = () => {
   ];
 
   return (
-    <div className="flex justify-center">
-      <div className="text-[1.8em] lob absolute">Faqs</div>
+    <div className="relative flex justify-center">
+      <div className="text-4xl lob absolute -top-20 text-semiblack">Faqs</div>
       <Timeline>
         {info.map(({ title, text }) => {
           return (
             <Timeline.Item key={title}>
               <Timeline.Point />
               <Timeline.Content>
-                <Timeline.Title className="text-goldie lob text-[1.5em]">{title}</Timeline.Title>
-                <Timeline.Body className="text-semiblack rob text-[1.2em]">{text}</Timeline.Body>
+                <Timeline.Title className="text-goldie lob text-[1.5em]">
+                  {title}
+                </Timeline.Title>
+                <Timeline.Body className="text-semiblack rob text-[1.2em]">
+                  {text}
+                </Timeline.Body>
               </Timeline.Content>
             </Timeline.Item>
           );

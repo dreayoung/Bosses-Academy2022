@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Navbar />
       <div className="flex justify-center p-4 cursor-pointer">
-        <Link href="/brunch">
+        <Link href="/register">
           <Image src={signature} width={100} height={50} alt="wyzae g signature"/>
         </Link>
       </div>

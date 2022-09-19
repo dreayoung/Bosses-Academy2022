@@ -13,7 +13,7 @@ const SubscriptionsCard = () => {
       <h3 className="text-center lob font-bold text-4xl text-goldie pb-6">
         Register Today! <br /> Start a Subscription Plan
       </h3>
-      <div className="relative m-auto grid grid-cols-2 space-x-6">
+      <div className="relative m-auto grid grid-cols-1 lg:grid-cols-2 space-x-6">
         <article className={`${styles.subscard} relative`}>
           <div className="lob shadow-xl w-[150px] h-[120px] backdrop-filter-blur rounded-[100%] p-10 text-goldie text-2xl font-bold m-auto text-center">
             $499
