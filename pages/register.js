@@ -1,19 +1,19 @@
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
-import { Elements } from '@stripe/react-stripe-js';
+// import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
 import Navbar from '../components/Navbar';
 import Brunch from '../components/Brunch';
 import About from '../components/About';
 import Footer from '../components/Footer';
-import SubscriptionsCard from '../components/SubscriptionsCard';
-import Faqs from '../components/Faqs';
+// import SubscriptionsCard from '../components/SubscriptionsCard';
+// import Faqs from '../components/Faqs';
 
-import zae from '../public/zae.jpg';
-import zaeglover from '../public/zaeglover.png';
+// import zae from '../public/zae.jpg';
+// import zaeglover from '../public/zaeglover.png';
 import signature from '../public/script-zae.png';
-import PaymentForm from '../components/PaymentForm';
+// import PaymentForm from '../components/PaymentForm';
 
 const benefits = [
   'Weekly Q&A Live Sessions',
@@ -25,9 +25,9 @@ const benefits = [
   'Access to Bonus Topics',
 ];
 
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-);
+// const stripePromise = loadStripe(
+//   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+// );
 
 const register = () => {
   return (
@@ -47,8 +47,8 @@ const register = () => {
       <div className="relative lg:hidden block"></div>
       <main className={styles.main}>
         <Brunch benefits={benefits} />
-        <SubscriptionsCard />
-        <Faqs />
+        {/* <SubscriptionsCard />
+        <Faqs /> */}
       </main>
       <Footer />
     </>
