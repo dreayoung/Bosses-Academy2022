@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import bow from '../public/bow.png';
+// import { motion } from 'framer-motion';
+
 // import structure from '../public/brunch.mp4';
 
 const learnhowto = [

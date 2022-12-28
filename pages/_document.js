@@ -19,6 +19,8 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <div id="root"></div>
+          {/* <script type="text/javascript"></script> */}
         </body>
       </Html>
     );

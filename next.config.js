@@ -1,18 +1,21 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-};
 
-const withVideos = require('next-videos');
+const withTM = require('next-transpile-modules')(['next-videos']);
 
-module.exports = withVideos({
-  assetPrefix: 'https://youtu.be/ZTe9vHF_aLg',
-
+module.exports = withTM({
   webpack(config, options) {
-    return config
-  }
-})
-
-
-module.exports = nextConfig;
+    config.module.rules.push({
+      test: /\.(ogg|mp4|wav|mpe?g)$/i,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {
+            name: '[name]-[hash].[ext]',
+          },
+        },
+      ],
+    });
+    return config;
+  },
+  reactStrictMode: true,
+});

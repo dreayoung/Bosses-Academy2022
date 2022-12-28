@@ -1,5 +1,7 @@
 import styles from '../styles/Home.module.css';
-import Image from 'next/image';
+import dynamic from "next/dynamic";
+
+// import Image from 'next/image';
 // import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
@@ -14,6 +16,12 @@ import Footer from '../components/Footer';
 // import zaeglover from '../public/zaeglover.png';
 import signature from '../public/script-zae.png';
 // import PaymentForm from '../components/PaymentForm';
+
+import React, {useEffect, useState} from 'react';
+import { PopupWidget } from 'react-calendly';
+import { InlineWidget } from 'react-calendly';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const benefits = [
   'Weekly Q&A Live Sessions',
@@ -30,19 +38,37 @@ const benefits = [
 // );
 
 const register = () => {
+  const [elementS, setElementS] = useState(null);
+
+useEffect(() => {
+  const input = document.getElementById("root");
+  setElementS(input)
+}, [])
   return (
     <>
       <Navbar />
       <div className="text-center p-8">
-        {/* <Link href="/brunch"> */}
+        <Link href="/brunch">
         <Image
           src={signature}
           width={150}
           height={50}
           alt="wyzae g signature"
         />
-        {/* </Link> */}
+        </Link>
       </div>
+      <PopupWidget
+        url="https://calendly.com/bosses-academy/30min"
+        rootElement={elementS}
+        text="Book a Consultation!"
+        pageSettings={{
+          backgroundColor: '000000',
+          hideEventTypeDetails: false,
+          hideLandingPageDetails: false,
+          primaryColor: 'f3d8b3',
+          textColor: 'ffffff',
+        }}
+      />
       <About />
       <div className="relative lg:hidden block"></div>
       <main className={styles.main}>

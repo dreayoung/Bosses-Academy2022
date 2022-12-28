@@ -1,27 +1,24 @@
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-// import brunchvid from '../public/brunchvid.mp4';
-import zae from '../public/zae.jpg';
-import zaeglover from '../public/zaeglover.png';
 
 const Brunch = ({ benefits }) => {
   return (
-    <div className="pt-20 lg:pt-0">
+    <div className={`${styles.main} pt-20 lg:pt-0`}>
       <div className="w-full max-w-full h-auto">
         <div className="border-t-[1px] border-t-semiblack w-80 lg:w-1/2 m-auto" />
         <div className="lob text-goldie mt-20 text-center text-4xl lg:text-7xl pt-10">
           Join us for brunch!
         </div>
-        <div className="mt-8">
-          <iframe
+        <div className="lg:mt-20">
+          <video
+            controls
+            auto="true"
             width="100%"
-            height="500"
-            src="https://www.youtube.com/embed/ZTe9vHF_aLg"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+            poster={'/ba.png'}
+            className="w-full h-[25rem]"
+          >
+            <source src="/videos/brunch.mp4" type="video/mp4" />
+            Sorry, your browser doesnt support videos.
+          </video>
         </div>
       </div>
       <div className="items-center register pt-40">
