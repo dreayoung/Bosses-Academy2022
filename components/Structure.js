@@ -15,10 +15,10 @@ const learnhowto = [
 
 const Structure = () => {
   return (
-    <section className={`${styles.main} overflow-x-hidden mt-10`}>
-      <div className="flex mt-40 mb-3">
-        <div className="relative border-t-[1px] border-t-semiblack w-80 lg:w-1/2 m-auto font-light text-goldie text-3xl lg:text-6xl items-center justify-center ">
-          <div className="rob font-bold uppercase lg:pr-2 text-center lg:pl-12 pt-40 pb-40 leading-[4rem]">
+    <section className={`${styles.main} overflow-x-hidden lg:mt-20 mt-60`}>
+      <div className="flex mt-20 mb-3">
+        <div className="relative w-80 lg:w-1/2 m-auto font-light text-goldie text-3xl lg:text-6xl items-center justify-center ">
+          <div className="rob font-bold uppercase lg:pr-2 text-center lg:pl-12 pt-40 pb-20 leading-[4rem]">
             <span className="hover:text-white">Structure.</span>
             <span className="hover:text-white"> Repair.</span>{' '}
             <span className="hover:text-white">Gain.</span>{' '}
@@ -28,7 +28,7 @@ const Structure = () => {
           </div>
         </div>
       </div>
-      <div className="pt-40 border-t-[1px] border-t-semiblack">
+      <div className="py-40 border-t-[1px] border-t-semiblack">
         <div className="items-center">
           <h3 className="absolute rob font-bold uppercase leading-[0.6] left-[13rem] whitespace-nowrap lg:left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-12 text-goldie text-3xl lg:text-6xl">
             Learn how to
