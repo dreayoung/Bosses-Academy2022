@@ -1,21 +1,38 @@
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { BsInstagram } from 'react-icons/bs';
 import zae from '../public/zae.jpg';
 import zaeglover from '../public/zaeglover.png';
 
 const About = () => {
+  const [switchIMG, setSWitchIMG] = useState(null);
+
+  useEffect(() => {
+    setInterval(() => {
+      setSWitchIMG(true);
+    }, 6000);
+
+    switchIMG
+      ? setTimeout(() => {
+          setSWitchIMG(null);
+        }, 6000)
+      : null;
+  }, [switchIMG]);
+
   return (
     <div className="">
-      <div className="lg:mt-[3.5rem] mt-20 w-full flex lg:flex-row justify-center items-center absolute top-40 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
+      <div className="lg:mt-[3.5rem] mt-[5.5rem] w-full flex justify-center items-center absolute top-40 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
         <div className="lg:w-[60%] lg:h-20 h-[10rem] transform-none">
-          <Image src={zaeglover} className="opacity-40" alt="wyzae glover" />
+          <Image
+            src={switchIMG ? zae : zaeglover}
+            className={`ease-in-out opacity-40 transition m-auto object-center`}
+            alt="wyzae glover"
+          />
         </div>
-        <div className="lg:w-[60%] lg:h-20 h-[10rem] transform-none">
+        {/* <div className="lg:w-[60%] lg:h-20 w-[10rem] h-[10rem] transform-none">
           <Image src={zae} className="opacity-40" alt="wyzae glover" />
-        </div>
+        </div> */}
       </div>
-      <h1 className="lg:pt-20 pt-8 relative font-bold text-center text-goldie brightness-110 uppercase rob text-8xl lg:text-[15rem]">
+      <h1 className="lg:pt-20 pt-10 relative font-bold text-center text-goldie brightness-110 uppercase rob text-8xl lg:text-[15rem]">
         <span className="old text-lg lg:text-goldie text-white lowercase lg:text-4xl">
           meet
         </span>
@@ -23,7 +40,7 @@ const About = () => {
         The Boss
       </h1>
       <article className="rob text-center text-md lg:text-2xl text-semiblack brightness-200 p-8 lg:pt-40 m-auto lg:w-[80rem]">
-        <p className="backdrop-blur-3xl lg:mt-20 p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-[1px] border-black border-opacity-60 m-auto">
+        <p className="backdrop-blur-3xl lg:bg-black lg:bg-opacity-60 mt-20 p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-[1px] border-black border-opacity-60 m-auto">
           <span className="rob hover:text-gray-200">
             &quot;ALWAYS remember you are the author of your own book.&quot;
           </span>
