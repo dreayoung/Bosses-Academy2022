@@ -1,25 +1,15 @@
 import styles from '../styles/Home.module.css';
-import dynamic from "next/dynamic";
-
-// import Image from 'next/image';
-// import { Elements } from '@stripe/react-stripe-js';
-import { loadStripe } from '@stripe/stripe-js';
+import React, { useEffect, useState } from 'react';
 
 import Navbar from '../components/Navbar';
 import Brunch from '../components/Brunch';
 import About from '../components/About';
 import Footer from '../components/Footer';
-// import SubscriptionsCard from '../components/SubscriptionsCard';
-// import Faqs from '../components/Faqs';
 
-// import zae from '../public/zae.jpg';
-// import zaeglover from '../public/zaeglover.png';
 import signature from '../public/script-zae.png';
-// import PaymentForm from '../components/PaymentForm';
 
-import React, {useEffect, useState} from 'react';
 import { PopupWidget } from 'react-calendly';
-import { InlineWidget } from 'react-calendly';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -33,28 +23,24 @@ const benefits = [
   'Access to Bonus Topics',
 ];
 
-// const stripePromise = loadStripe(
-//   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-// );
-
-const register = () => {
+const Register = () => {
   const [elementS, setElementS] = useState(null);
 
-useEffect(() => {
-  const input = document.getElementById("root");
-  setElementS(input)
-}, [])
+  useEffect(() => {
+    const input = document.getElementById('root');
+    setElementS(input);
+  }, []);
   return (
     <>
       <Navbar />
       <div className="text-center p-8">
         <Link href="/brunch">
-        <Image
-          src={signature}
-          width={150}
-          height={50}
-          alt="wyzae g signature"
-        />
+          <Image
+            src={signature}
+            width={150}
+            height={50}
+            alt="wyzae g signature"
+          />
         </Link>
       </div>
       <PopupWidget
@@ -73,12 +59,10 @@ useEffect(() => {
       <div className="relative lg:hidden block"></div>
       <main className={styles.main}>
         <Brunch benefits={benefits} />
-        {/* <SubscriptionsCard />
-        <Faqs /> */}
       </main>
       <Footer />
     </>
   );
 };
 
-export default register;
+export default Register;
