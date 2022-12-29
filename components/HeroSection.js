@@ -8,10 +8,10 @@ import { BsFacebook } from 'react-icons/bs';
 function HeroSection() {
   return (
     <>
-      <div className="absolute right-0 lg:top-[80] -bottom-20 lg:bottom-0">
-        <Image src={woman} width={400} height={400} alt="woman svg" />
+      <div className="absolute right-0 -bottom-20 lg:-bottom-72 lg:w-[60%] w-full">
+        <Image src={woman} alt="woman svg" className="opacity-80" />
       </div>
-      <h1 className="-mt-40 text-[8vh] lg:text-[30vh] text-center text-goldie leading-[1.2] lg:leading-[0.8] uppercase rob">
+      <h1 className="relative brightness-110 -mt-40 text-[8vh] lg:text-[30vh] text-center text-goldie leading-[1.2] lg:leading-[0.8] uppercase rob">
         Bosses Academy
       </h1>
       <Link href="/register" className="cursor-pointer">

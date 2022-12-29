@@ -7,11 +7,11 @@ import zaeglover from '../public/zaeglover.png';
 const About = () => {
   return (
     <div className="">
-      <div className="lg:mt-[8.5rem] mt-20 w-full flex lg:flex-row justify-center items-center absolute top-40 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
-        <div className="lg:w-[90%] lg:h-60 h-[10rem] transform-none">
+      <div className="lg:mt-[3.5rem] mt-20 w-full flex lg:flex-row justify-center items-center absolute top-40 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
+        <div className="lg:w-[60%] lg:h-20 h-[10rem] transform-none">
           <Image src={zaeglover} className="opacity-40" alt="wyzae glover" />
         </div>
-        <div className="lg:h-60 h-[10rem] transform-none">
+        <div className="lg:w-[60%] lg:h-20 h-[10rem] transform-none">
           <Image src={zae} className="opacity-40" alt="wyzae glover" />
         </div>
       </div>
@@ -23,7 +23,7 @@ const About = () => {
         The Boss
       </h1>
       <article className="rob text-center text-md lg:text-2xl text-semiblack brightness-200 p-8 lg:pt-40 m-auto lg:w-[80rem]">
-        <p className="backdrop-blur-3xl lg:bg-none lg:bg-opacity-40 lg:mt-20 bg-transparent p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-1 border-black border-opacity-40 m-auto">
+        <p className="backdrop-blur-3xl lg:mt-20 p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-[1px] border-black border-opacity-60 m-auto">
           <span className="rob hover:text-gray-200">
             &quot;ALWAYS remember you are the author of your own book.&quot;
           </span>

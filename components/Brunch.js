@@ -23,7 +23,7 @@ const Brunch = ({ benefits }) => {
           </video>
         </div>
         <Link href="https://www.youtube.com/@bossesacademyllc5124">
-          <div className="lg:text-2xl flex justify-center items-center rounded-2xl bg-semiblack text-pinky m-auto w-40 lg:w-full my-8 p-4 space-x-4 cursor-pointer hover:brightness-200">
+          <div className="lg:text-2xl flex justify-center items-center rounded-2xl bg-semiblack text-pinky m-auto w-72 lg:w-full my-8 p-4 space-x-4 cursor-pointer hover:brightness-200">
             <BsYoutube size={25} />
             <p>Subscribe!</p>
           </div>
