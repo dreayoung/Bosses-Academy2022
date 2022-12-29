@@ -7,29 +7,23 @@ import zaeglover from '../public/zaeglover.png';
 const About = () => {
   return (
     <div className="">
-      <div className="h-[70vh] flex lg:flex-row justify-center items-center absolute top-60 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
-        <div className="lg:w-[40rem] lg:h-60 w-[12rem] h-[20rem] -backdrop-hue-rotate-180">
+      <div className="lg:mt-[8.5rem] mt-20 w-full flex lg:flex-row justify-center items-center absolute top-40 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
+        <div className="lg:w-[90%] lg:h-60 h-[10rem] transform-none">
           <Image src={zaeglover} className="opacity-40" alt="wyzae glover" />
         </div>
-        <div className="lg:w-[40.8rem] lg:h-60 w-[12em] h-[20rem]">
+        <div className="lg:h-60 h-[10rem] transform-none">
           <Image src={zae} className="opacity-40" alt="wyzae glover" />
         </div>
       </div>
-      <Link href="https://www.instagram.com/bossesacademyllc_">
-        <div className="cursor-pointer absolute lg:top-2 top-4 right-2 bg-semiblack text-pinky old lg:p-4 p-2 rounded-2xl flex justify-center items-center space-x-2">
-          <BsInstagram size={20} />
-          <span className="lg:text-sm text-xs">@bossesacademyllc_</span>
-        </div>
-      </Link>
-      <h1 className="pt-20 relative font-bold text-center text-goldie uppercase rob text-8xl lg:text-[15rem]">
-        <span className="old text-lg text-goldie lowercase lg:text-4xl">
+      <h1 className="lg:pt-20 pt-8 relative font-bold text-center text-goldie brightness-110 uppercase rob text-8xl lg:text-[15rem]">
+        <span className="old text-lg lg:text-goldie text-white lowercase lg:text-4xl">
           meet
         </span>
         <br />
         The Boss
       </h1>
-      <article className="rob text-center text-md lg:text-2xl text-pinky p-14 lg:pt-40 m-auto lg:w-[80rem]">
-        <p className="backdrop-blur-3xl bg-black p-2 bg-opacity-40 rounded-2xl lg:w-[30rem] m-auto">
+      <article className="rob text-center text-md lg:text-2xl text-semiblack brightness-200 p-8 lg:pt-40 m-auto lg:w-[80rem]">
+        <p className="backdrop-blur-3xl lg:bg-none lg:bg-opacity-40 lg:mt-20 bg-transparent p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-1 border-black border-opacity-40 m-auto">
           <span className="rob hover:text-gray-200">
             &quot;ALWAYS remember you are the author of your own book.&quot;
           </span>

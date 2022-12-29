@@ -33,14 +33,14 @@ const Register = () => {
   return (
     <>
       <Navbar />
-      <div className="text-center p-8">
+      <div className="text-center p-4">
         <Link href="/brunch">
-          <Image
-            src={signature}
-            width={150}
-            height={50}
-            alt="wyzae g signature"
-          />
+          <div className="lg:w-60 w-40 m-auto">
+            <Image
+              src={signature}
+              alt="wyzae g signature"
+            />
+          </div>
         </Link>
       </div>
       <PopupWidget
@@ -51,7 +51,7 @@ const Register = () => {
           height: '100vh',
         }}
         prefill={{
-          date: new Date(Date.now() + 86400000)
+          date: new Date(Date.now() + 86400000),
         }}
         pageSettings={{
           backgroundColor: '000000',
