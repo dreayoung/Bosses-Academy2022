@@ -18,7 +18,7 @@ export default function Home() {
           <Image src={signature} width={100} height={50} alt="wyzae g signature"/>
         </Link>
       </div>
-      <main className={styles.main}>
+      <main className="pt-8">
         <HeroSection />
       </main>
       <Structure />
