@@ -20,9 +20,6 @@ const Footer = () => {
             <Link href="/register">About</Link>
           </li>
           <li className="mr-4 hover:underline md:mr-6 ">
-            <Link href="#">Licensing</Link>
-          </li>
-          <li className="mr-4 hover:underline md:mr-6 ">
             <Link href="mailto:bc@bossesacademy.org?subject=Contact">
               Contact
             </Link>
