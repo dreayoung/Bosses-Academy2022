@@ -17,20 +17,24 @@ const Footer = () => {
         </a>
         <ul className="lg:flex lg:flex-wrap items-center  text-sm text-pinky register">
           <li className="mr-4 hover:underline md:mr-6 ">
-            <Link href="/brunch">About</Link>
+            <Link href="/register">About</Link>
           </li>
           <li className="mr-4 hover:underline md:mr-6 ">
             <Link href="#">Licensing</Link>
           </li>
           <li className="mr-4 hover:underline md:mr-6 ">
-            <Link href="#">Contact</Link>
+            <Link href="mailto:bc@bossesacademy.org?subject=Contact">
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
       <hr className="my-6 border-semiblack sm:mx-auto lg:my-8" />
-      <span className="old block text-sm text-pinky sm:text-center ">
-        createdbydwe{/* <Image src={ba} width={100} height={100} /> */}
-      </span>
+      <Link href="https://www.instagram.com/createdbydwe">
+        <span className="old block text-sm text-pinky sm:text-center ">
+          site createdbydwe {`</>`}
+        </span>
+      </Link>
     </footer>
   );
 };

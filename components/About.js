@@ -1,57 +1,71 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { BsInstagram } from 'react-icons/bs';
 import zae from '../public/zae.jpg';
 import zaeglover from '../public/zaeglover.png';
 
 const About = () => {
   return (
-    <div className="relative">
-      <div className="h-[70vh] lg:h-auto">
-        <div className="absolute hidden lg:block lg:right-20 lg:top-10">
-          <Image
-            src={zaeglover}
-            width={300}
-            height={300}
-            className="rounded-lg opacity-95"
-            alt="wyzae glover"
-          />
+    <div className="">
+      <div className="h-[70vh] flex lg:flex-row justify-center items-center absolute top-60 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
+        <div className="lg:w-[40rem] lg:h-60 w-[12rem] h-[20rem] -backdrop-hue-rotate-180">
+          <Image src={zaeglover} className="opacity-40" alt="wyzae glover" />
         </div>
-        <div className="absolute block lg:hidden lg:right-20 left-8 lg:top-20">
-          <Image
-            src={zaeglover}
-            width={250}
-            height={300}
-            className="rounded-lg opacity-80"
-            alt="wyzae glover"
-          />
-        </div>
-        <div className="absolute lg:right-[12rem] right-8 top-[13rem]">
-          <Image
-            src={zae}
-            width={250}
-            height={280}
-            className="rounded-lg opacity-95"
-            alt="wyzae g"
-          />
+        <div className="lg:w-[40.8rem] lg:h-60 w-[12em] h-[20rem]">
+          <Image src={zae} className="opacity-40" alt="wyzae glover" />
         </div>
       </div>
-      <h1 className="font-bold lg:pl-40 text-center lg:text-left text-goldie uppercase rob text-6xl lg:text-8xl">
-        <span className="old text-2xl old text-goldie lowercase">meet</span>The
-        Boss
-      </h1>
-      <article className="text-center old text-2xl lg:text-2xl text-semiblack p-14 lg:pl-32 lg:w-[50rem] brightness-150">
-        Hey family, welcome to Bosses Academy official website. My name is{' '}
-        <span className="brightness-180">Ms. Wyzae Glover</span>. I am the proud
-        CEO of Bosses Academy LLC.
+      <Link href="https://www.instagram.com/bossesacademyllc_">
+        <div className="cursor-pointer absolute lg:top-2 top-4 right-2 bg-semiblack text-pinky old lg:p-4 p-2 rounded-2xl flex justify-center items-center space-x-2">
+          <BsInstagram size={20} />
+          <span className="lg:text-sm text-xs">@bossesacademyllc_</span>
+        </div>
+      </Link>
+      <h1 className="pt-20 relative font-bold text-center text-goldie uppercase rob text-8xl lg:text-[15rem]">
+        <span className="old text-lg text-goldie lowercase lg:text-4xl">
+          meet
+        </span>
         <br />
-        <br /> Bosses Academy LLC was founded in your very own NYC in 2022.
-        Furthermore, Bosses Academy Focuses on creating Future Bosses of
-        Society! No matter if you&apos;re a beginner or you&apos;ve been in
-        entrepreneurship life for a while, we focus on improving, expanding and
-        educating ourselves! Bosses Academy focus on helping individuals
-        structure their business or businesses properly. We help individuals
-        clean up their credit. We help individuals gain personal and business
-        credit. We educate individuals on multiple streams of income and over
-        all how to be your OWN BOSS!
+        The Boss
+      </h1>
+      <article className="rob text-center text-md lg:text-2xl text-pinky p-14 lg:pt-40 m-auto lg:w-[80rem]">
+        <p className="backdrop-blur-3xl bg-black p-2 bg-opacity-40 rounded-2xl lg:w-[30rem] m-auto">
+          <span className="rob hover:text-gray-200">
+            &quot;ALWAYS remember you are the author of your own book.&quot;
+          </span>
+          <br />
+          <span className="lg:text-lg text-xs lowercase brightness-150">
+            A MESSAGE FROM FOUNDER , WYZAE GLOVER
+          </span>
+        </p>
+        <br />
+        <br />
+        <br /> Wyzae Glover founded the ‘Bosses Academy’ in May of 2022 in New
+        York City for the ‘Future Bosses of Society’, to educate them on
+        financial literacy , generational wealth and the importance of mental
+        health, while providing them with a safe haven for expression.
+        <br />
+        <br />
+        Over the years Wyzae Glover has attended seminars, received mentorship
+        from established financial professionals, and diligently studied the
+        world of entrepreneurship and wealth building. She has recently been
+        featured on podcasts and has hosted a community information session
+        entitled ‘Bosses Brunch’.
+        <br />
+        <br />
+        As a former educator and social worker who has obtained accreditation in
+        the fields Education and Psychology, Coach Glover recognized that
+        financial literacy was at a deficit in the African-American community.
+        She recognized that there was a need for programming in the likes of a
+        new “Black Wall Street”, thus she began educating entrepreneurs on
+        business structure and personal financial development including means on
+        how to raise their credit and gain multiple streams of income.
+        <br />
+        <br />
+        Another passion of Coach Glover is mental health awareness which led her
+        to launch the “Mental Health” discussions of the Bosses Academy. This
+        portion of the business is designed to be a safe haven for individuals
+        who have become overwhelmed by the pressures of life and business.
       </article>
       <div className="flex justify-center">
         <iframe
@@ -65,7 +79,6 @@ const About = () => {
           loading="lazy"
         ></iframe>
       </div>
-      {/* <h2 className="text-center register">register below</h2> */}
     </div>
   );
 };

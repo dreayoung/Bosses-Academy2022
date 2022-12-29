@@ -19,8 +19,12 @@ const Structure = () => {
       <div className="flex mt-40 mb-3">
         <div className="relative border-t-[1px] border-t-semiblack w-80 lg:w-1/2 lg:ml-80 font-light text-goldie text-3xl lg:text-6xl items-center justify-center ">
           <div className="rob font-bold uppercase lg:pr-2 text-center lg:pl-12 pt-40 pb-40 leading-[4rem]">
-            Structure. Repair. Gain. Achieve. Financial Wealth. Generational
-            Wealth.
+            <span className="hover:text-white">Structure.</span>
+            <span className="hover:text-white"> Repair.</span>{' '}
+            <span className="hover:text-white">Gain.</span>{' '}
+            <span className="hover:text-white">Achieve.</span>
+            <span className="hover:text-white"> Financial Wealth.</span>{' '}
+            <span className="hover:text-white">Generational Wealth.</span>
           </div>
         </div>
       </div>
@@ -29,7 +33,7 @@ const Structure = () => {
       </div> */}
       <div className="pt-40 border-t-[1px] border-t-semiblack">
         <div className="items-center">
-          <h3 className="absolute rob font-bold uppercase leading-[0.6] left-[13rem] whitespace-nowrap lg:left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-12 text-goldie text-4xl lg:text-6xl">
+          <h3 className="absolute rob font-bold uppercase leading-[0.6] left-[13rem] whitespace-nowrap lg:left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-12 text-goldie text-3xl lg:text-6xl">
             Learn how to
           </h3>
         </div>
@@ -38,7 +42,7 @@ const Structure = () => {
             return (
               <div
                 key={x}
-                className={`${styles.card} font-beyulian uppercase text-goldie text-2xl`}
+                className={`${styles.card} font-beyulian uppercase text-goldie text-xl lg:text-2xl `}
               >
                 {bulletin}
               </div>

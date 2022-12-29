@@ -14,12 +14,11 @@ function HeroSection() {
       <h1 className="-mt-40 text-[8vh] lg:text-[30vh] text-center text-goldie leading-[1.2] lg:leading-[0.8] uppercase rob">
         Bosses Academy
       </h1>
-      <Link href="/register">
+      <Link href="/register" className="cursor-pointer">
       <div className="relative register mt-10 items-center justify-center text-pinky text-center animate-pulse">
-        Registor Today
+        Register Today
       </div>
       </Link>
-      {/* <BsFacebook size={30} /> */}
     </>
   );
 }

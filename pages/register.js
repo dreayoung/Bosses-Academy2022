@@ -47,11 +47,17 @@ const Register = () => {
         url="https://calendly.com/bosses-academy/30min"
         rootElement={elementS}
         text="Book a Consultation!"
+        styles={{
+          height: '100vh',
+        }}
+        prefill={{
+          date: new Date(Date.now() + 86400000)
+        }}
         pageSettings={{
           backgroundColor: '000000',
           hideEventTypeDetails: false,
           hideLandingPageDetails: false,
-          primaryColor: 'f3d8b3',
+          primaryColor: '91834e',
           textColor: 'ffffff',
         }}
       />

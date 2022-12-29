@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { BsYoutube } from 'react-icons/bs';
 import styles from '../styles/Home.module.css';
 
 const Brunch = ({ benefits }) => {
@@ -20,9 +22,15 @@ const Brunch = ({ benefits }) => {
             Sorry, your browser doesnt support videos.
           </video>
         </div>
+        <Link href="https://www.youtube.com/@bossesacademyllc5124">
+          <div className="lg:text-2xl flex justify-center items-center rounded-2xl bg-semiblack text-pinky m-auto w-40 lg:w-full my-8 p-4 space-x-4 cursor-pointer hover:brightness-200">
+            <BsYoutube size={25} />
+            <p>Subscribe!</p>
+          </div>
+        </Link>
       </div>
       <div className="items-center register pt-40">
-        <h3 className="absolute lob font-bold leading-[0.6] left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-12 text-goldie text-5xl lg:text-6xl">
+        <h3 className="absolute lob font-bold leading-[0.6] left-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-12 text-goldie text-4xl lg:text-6xl">
           Benefits
         </h3>
       </div>
@@ -31,7 +39,7 @@ const Brunch = ({ benefits }) => {
           return (
             <div
               key={x}
-              className={`${styles.card} font-beyulian uppercase text-goldie text-2xl`}
+              className={`${styles.card} font-beyulian uppercase text-goldie text-xl lg:text-2xl`}
             >
               {bulletin}
             </div>
