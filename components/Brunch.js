@@ -4,10 +4,8 @@ import { BsPlayCircle, BsYoutube } from 'react-icons/bs';
 import styles from '../styles/Home.module.css';
 
 const Brunch = ({ benefits }) => {
-  const [playV, setPlay] = useState(true);
-
   return (
-    <div className={`${styles.main} pt-20 lg:pt-0`}>
+    <div className={`${styles.main} overflow-x-hidden py-20 lg:pt-0`}>
       <div className="w-full max-w-full h-auto">
         <div className="border-t-[1px] border-t-semiblack w-80 lg:w-1/2 m-auto" />
         <div className="lob text-goldie mt-20 text-center text-4xl lg:text-7xl pt-10">
@@ -19,23 +17,14 @@ const Brunch = ({ benefits }) => {
             <p>Subscribe!</p>
           </div>
         </Link>
-        <div className="lg:mt-20 rounded-2xl cursor-pointer relative">
-          <div className="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 left-1/2 w-40">
-            <BsPlayCircle
-              className={`${
-                !playV ? 'opacity-0' : 'opacity-100'
-              } transition ease-in-out delay-[0.3s] m-auto text-4xl text-goldie `}
-            />
-          </div>
+        <div className="lg:mt-20 mt-8 cursor-pointer relative">
           <video
             auto="true"
             width="100%"
             height="100%"
-            className="w-full h-[25rem] lg:rounded-full bg-black"
-            onClick={(e) => {
-              playV ? e.target.play() : e.target.pause();
-              setPlay(!playV);
-            }}
+            controls
+            poster="https://cdn.shopify.com/s/files/1/0579/2183/1099/products/vinyl-backdrops-black-curtain-material-vinyl-photography-backdrops-30423078404283_1024x1024.png?v=1637723016"
+            className="w-full h-[30rem] bg-black"
           >
             <source src="/videos/brunch.mp4" type="video/mp4" />
             Sorry, your browser doesnt support videos.

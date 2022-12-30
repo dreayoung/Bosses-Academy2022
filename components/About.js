@@ -32,7 +32,7 @@ const About = () => {
         The Boss
       </h1>
       <article className="rob text-center text-md lg:text-2xl text-semiblack brightness-200 p-8 lg:pt-40 m-auto lg:w-[80rem]">
-        <p className="backdrop-blur-3xl lg:bg-black lg:bg-opacity-60 mt-20 p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-[1px] border-black border-opacity-60 m-auto">
+        <p className="backdrop-blur-3xl bg-black bg-opacity-60 mt-20 p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-[1px] border-black border-opacity-60 m-auto">
           <span className="rob hover:text-gray-200">
             &quot;ALWAYS remember you are the author of your own book.&quot;
           </span>
@@ -75,7 +75,7 @@ const About = () => {
         <iframe
           style={{ borderRadius: '12px' }}
           src="https://open.spotify.com/embed/episode/7t7lWtMcc851rnPoLRdIKE?utm_source=generator&theme=0"
-          width="100%"
+          width="80%"
           height="152"
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
