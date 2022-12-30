@@ -31,7 +31,7 @@ const Brunch = ({ benefits }) => {
             auto="true"
             width="100%"
             height="100%"
-            className="w-full h-[25rem] lg:rounded-full"
+            className="w-full h-[25rem] lg:rounded-full bg-black"
             onClick={(e) => {
               playV ? e.target.play() : e.target.pause();
               setPlay(!playV);

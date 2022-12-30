@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import zae from '../public/zae.jpg';
 import zaeglover from '../public/zaeglover.png';
+import AboutCarousel from './AboutCarousel';
 
 const About = () => {
   const [switchIMG, setSWitchIMG] = useState(null);
@@ -21,16 +22,7 @@ const About = () => {
   return (
     <div className="">
       <div className="lg:mt-[3.5rem] mt-[5.5rem] w-full flex justify-center items-center absolute top-40 -translate-x-1/2 -translate-y-1/2 transform left-1/2">
-        <div className="lg:w-[60%] lg:h-20 h-[10rem] transform-none">
-          <Image
-            src={switchIMG ? zae : zaeglover}
-            className={`ease-in-out opacity-40 transition m-auto object-center`}
-            alt="wyzae glover"
-          />
-        </div>
-        {/* <div className="lg:w-[60%] lg:h-20 w-[10rem] h-[10rem] transform-none">
-          <Image src={zae} className="opacity-40" alt="wyzae glover" />
-        </div> */}
+        <AboutCarousel />
       </div>
       <h1 className="lg:pt-20 pt-10 relative font-bold text-center text-goldie brightness-110 uppercase rob text-8xl lg:text-[15rem]">
         <span className="old text-lg lg:text-goldie text-white lowercase lg:text-4xl">
@@ -45,8 +37,8 @@ const About = () => {
             &quot;ALWAYS remember you are the author of your own book.&quot;
           </span>
           <br />
-          <span className="lg:text-lg text-xs lowercase brightness-150">
-            A MESSAGE FROM FOUNDER , WYZAE GLOVER
+          <span className="lg:text-lg text-xs brightness-150">
+            A message from founder, Wyzae Glover
           </span>
         </p>
         <br />
@@ -64,13 +56,14 @@ const About = () => {
         entitled ‘Bosses Brunch’.
         <br />
         <br />
-        As a former educator and social worker who has obtained accreditation in
-        the fields Education and Psychology, Coach Glover recognized that
-        financial literacy was at a deficit in the African-American community.
-        She recognized that there was a need for programming in the likes of a
-        new “Black Wall Street”, thus she began educating entrepreneurs on
-        business structure and personal financial development including means on
-        how to raise their credit and gain multiple streams of income.
+        As a former educator and current Supervisor of Social Work who has
+        obtained accreditation in the fields Education and Psychology, Coach
+        Glover recognized that financial literacy was at a deficit in the
+        African-American community. She recognized that there was a need for
+        programming in the likes of a new “Black Wall Street”, thus she began
+        educating entrepreneurs on business structure and personal financial
+        development including means on how to raise their credit and gain
+        multiple streams of income.
         <br />
         <br />
         Another passion of Coach Glover is mental health awareness which led her

@@ -12,14 +12,14 @@ module.exports = {
     },
     colors: {
       brown: '#7c6f62',
-      goldie: '#91834e',
+      goldie: '#b78717',
       silver: '#BBC2CC',
       semiblack: '#302e2e',
       pinky: '#a89898',
     },
     backdropFilter: {
-      'none': 'none',
-      'blur': 'blur(20px)',
+      none: 'none',
+      blur: 'blur(20px)',
     },
   },
   plugins: [require('flowbite/plugin')],

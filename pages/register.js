@@ -35,7 +35,7 @@ const Register = () => {
       <Navbar />
       <div className="text-center p-4">
         <Link href="/brunch">
-          <div className="lg:w-60 w-40 m-auto">
+          <div className="lg:w-60 w-20 m-auto">
             <Image
               src={signature}
               alt="wyzae g signature"
@@ -62,7 +62,6 @@ const Register = () => {
         }}
       />
       <About />
-      <div className="relative lg:hidden block"></div>
       <main className={styles.main}>
         <Brunch benefits={benefits} />
       </main>
