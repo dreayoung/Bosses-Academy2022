@@ -39,7 +39,7 @@ const About = () => {
         Boss
       </h1>
       <article className="old text-2xl lg:text-2xl text-semiblack p-14 lg:pl-32 lg:w-[50rem] brightness-150">
-        Hey family, welcome to Bosses Academy official website. My name is{' '}
+        Hey family, Welcome to Bosses Academy official website. My name is{' '}
         <span className="brightness-180">Ms. Wyzae Glover</span>. I am the proud
         CEO of Bosses Academy LLC.
         <br />
