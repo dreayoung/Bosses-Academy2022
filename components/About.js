@@ -25,13 +25,13 @@ const About = () => {
         <AboutCarousel />
       </div>
       <h1 className="lg:pt-20 pt-10 relative font-bold text-center text-goldie brightness-110 uppercase rob text-8xl lg:text-[15rem]">
-        <span className="old text-lg lg:text-goldie text-white lowercase lg:text-4xl">
+        <span className="lob font-thin text-lg lg:text-goldie text-white lowercase lg:text-4xl">
           meet
         </span>
         <br />
         The Boss
       </h1>
-      <article className="rob text-center text-md lg:text-2xl text-semiblack brightness-200 p-8 lg:pt-40 m-auto lg:w-[80rem]">
+      <article className="rob text-center text-md lg:text-2xl text-semiblack brightness-200 p-8 lg:px-20 px-8 lg:pt-40 m-auto lg:w-[80rem]">
         <p className="backdrop-blur-3xl bg-black bg-opacity-60 mt-20 p-2 shadow-2xl rounded-2xl lg:w-[30rem] w-80 border-[1px] border-black border-opacity-60 m-auto">
           <span className="rob hover:text-gray-200">
             &quot;ALWAYS remember you are the author of your own book.&quot;

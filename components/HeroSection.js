@@ -12,7 +12,7 @@ function HeroSection() {
           className="opacity-80 lg:opacity-60"
         />
       </div>
-      <h1 className="relative brightness-110 my-10 text-[8vh] lg:text-[30vh] text-center text-goldie leading-[1.2] lg:leading-[0.8] uppercase rob">
+      <h1 className="relative font-bold brightness-110 my-10 text-[8vh] lg:text-[30vh] text-center text-goldie leading-[1.2] lg:leading-[1.0] uppercase rob">
         Bosses Academy
       </h1>
       <Link href="/register" className="cursor-pointer">
