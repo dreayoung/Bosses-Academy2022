@@ -18,7 +18,17 @@ const Brunch = ({ benefits }) => {
           </div>
         </Link>
         <div className="lg:mt-20 mt-8 cursor-pointer relative">
-          <video
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZTe9vHF_aLg?controls=0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-full h-[30rem] bg-black"
+          ></iframe>
+          {/* <video
             auto="true"
             width="100%"
             height="100%"
@@ -28,7 +38,7 @@ const Brunch = ({ benefits }) => {
           >
             <source src="/videos/brunch.mp4" type="video/mp4" />
             Sorry, your browser doesnt support videos.
-          </video>
+          </video> */}
         </div>
       </div>
       <div className="items-center register pt-40">
