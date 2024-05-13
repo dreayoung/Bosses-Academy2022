@@ -15,7 +15,7 @@ const learnhowto = [
 
 const Structure = () => {
   return (
-    <section className={`${styles.main} overflow-x-hidden`}>
+    <section className={`${styles.main} overflow-x-hidden mb-20`}>
       <div className="flex mt-40 mb-3">
         <div className="relative border-t-[1px] border-t-semiblack w-80 lg:w-1/2 lg:ml-80 font-light text-goldie text-3xl lg:text-6xl items-center justify-center ">
           <div className="rob font-bold uppercase lg:pr-2 text-center lg:pl-12 pt-40 pb-40 leading-[4rem]">
