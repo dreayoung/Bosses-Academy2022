@@ -24,7 +24,7 @@ const Faqs = () => {
   ];
 
   return (
-    <div className="relative flex justify-center">
+    <div className="relative flex justify-center px-8 md:px-20 mb-20">
       <div className="text-4xl lob absolute -top-20 text-semiblack">Faqs</div>
       <Timeline>
         {info.map(({ title, text }) => {

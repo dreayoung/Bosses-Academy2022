@@ -9,13 +9,13 @@ const stripePromise = loadStripe(
 
 const SubscriptionsCard = () => {
   return (
-    <section className="pt-20 pb-40">
+    <section className="pt-20 mb-40">
       <h3 className="text-center lob font-bold text-4xl text-goldie pb-6">
         Register Today! <br /> Start a Subscription Plan
       </h3>
       <div className="relative m-auto grid grid-cols-1 lg:grid-cols-2 space-x-6">
         <article className={`${styles.subscard} relative`}>
-          <div className="lob shadow-xl w-[150px] h-[120px] backdrop-filter-blur rounded-[100%] p-10 text-goldie text-2xl font-bold m-auto text-center">
+          <div className="lob text-goldie text-4xl font-bold m-auto text-center">
             $499
           </div>
           <div className="text-[#D4AF37] pt-8 pb-4 register font-bold">
@@ -33,7 +33,7 @@ const SubscriptionsCard = () => {
           </button> */}
         </article>
 
-        <div className="lg:pt-10">
+        <div className="pt-10">
           <Elements stripe={stripePromise}>
             <PaymentForm />
           </Elements>

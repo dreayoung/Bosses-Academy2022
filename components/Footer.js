@@ -17,7 +17,7 @@ const Footer = () => {
         </a>
         <ul className="lg:flex lg:flex-wrap items-center  text-sm text-pinky register">
           <li className="mr-4 hover:underline md:mr-6 ">
-            <Link href="/brunch">About</Link>
+            <Link href="/register">About</Link>
           </li>
           <li className="mr-4 hover:underline md:mr-6 ">
             <Link href="#">Licensing</Link>

@@ -43,16 +43,16 @@ const PaymentForm = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full text-goldie">
       <form className="flex flex-col gap-4">
         <div>
           Enter your card details. <br /> Your subscription will start now.
         </div>
         <div>
-          {'->'} Total due now $124.75
+          {'->'} <span className="text-[#D4AF37]">Total due now $124.75</span>
           <br />
           {'->'} Subscribing to{' '}
-          <span className="text-goldie">Premium Plan</span>
+          <span className="text-[#D4AF37]">Premium Plan</span>
         </div>
         <div>
           <label
@@ -91,7 +91,7 @@ const PaymentForm = () => {
         <div className="bg-transparent border-2 border-semiblack rounded-full p-4 text-goldie">
           <CardElement />
         </div>
-        <div className="flex items-center gap-2">
+        <div className="py-4 flex items-center gap-2">
           <div>
             <Checkbox id="agree" required={true} /> I agree to the terms &amp;
             conditions

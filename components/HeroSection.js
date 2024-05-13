@@ -15,9 +15,9 @@ function HeroSection() {
         Bosses Academy
       </h1>
       <Link href="/register">
-      <div className="relative register mt-10 items-center justify-center text-pinky text-center animate-pulse">
-        Registor Today
-      </div>
+        <div className="relative register hover:cursor-pointer mt-10 items-center justify-center text-pinky text-center animate-pulse">
+          Registor Today
+        </div>
       </Link>
       {/* <BsFacebook size={30} /> */}
     </>
